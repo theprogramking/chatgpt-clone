@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from './Header.jsx';
-import { PlusIcon, EyeIcon, LightBulbIcon, TelescopeIcon, ArtIcon, MicrophoneIcon, UpArrowIcon, SoundWaveIcon } from './assets';
+import { PlusIcon, EyeIcon, LightBulbIcon, TelescopeIcon, ArtIcon, DotsIcon, MicrophoneIcon, UpArrowIcon, SoundWaveIcon } from './assets';
 
 export default function App() {
 
@@ -46,7 +46,7 @@ export default function App() {
             <ArtIcon />
           </div>
           <div className="icon">
-            
+            <DotsIcon />
           </div>
           <div className="icon-row">
             <div className="icon">
