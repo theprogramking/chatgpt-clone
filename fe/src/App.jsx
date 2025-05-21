@@ -15,6 +15,10 @@ export default function App() {
     }
   }
 
+  const promptAI = () => {
+    
+  }
+
   return (
     <>
       <Header />
@@ -36,7 +40,10 @@ export default function App() {
           <Icons.ArtIcon />
           <div className="icon-row">
             <Icons.MicrophoneIcon />
-            {isEmpty ? <Icons.SoundWaveIcon /> : <Icons.UpArrowIcon />}
+            {isEmpty ?
+              <Icons.SoundWaveIcon /> :
+              <Icons.UpArrowIcon
+                onClick={promptAI()} />}
           </div>
         </div>
       </div>
