@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Header from './Header.jsx';
-import { PlusIcon, EyeIcon, LightBulbIcon, TelescopeIcon, ArtIcon, DotsIcon, MicrophoneIcon, UpArrowIcon, SoundWaveIcon } from './assets';
+import Footer from './Footer.jsx';
+import * as Icons from './assets';
 
 export default function App() {
 
@@ -31,38 +32,36 @@ export default function App() {
         </div>
         <div className="pill-group">
           <div className="icon plus-btn">
-            <PlusIcon />
+            <Icons.PlusIcon />
           </div>
           <div className="icon">
-            <EyeIcon />
+            <Icons.EyeIcon />
           </div>
           <div className="icon">
-            <LightBulbIcon />
+            <Icons.LightBulbIcon />
           </div>
           <div className="icon">
-            <TelescopeIcon />
+            <Icons.TelescopeIcon />
           </div>
           <div className="icon">
-            <ArtIcon />
+            <Icons.ArtIcon />
           </div>
           <div className="icon">
-            <DotsIcon />
+            <Icons.DotsIcon />
           </div>
           <div className="icon-row">
             <div className="icon">
-              <MicrophoneIcon />
+              <Icons.MicrophoneIcon />
             </div>
 
             <div className="icon black">
-              {isEmpty ? <SoundWaveIcon /> : <UpArrowIcon />}
+              {isEmpty ? <Icons.SoundWaveIcon /> : <Icons.UpArrowIcon />}
             </div>
           </div>
         </div>
       </div>
 
-      <footer className="footer">
-        Made with ❤️ by Luke Shimkus
-      </footer>
+      <Footer />
     </>
   );
 }

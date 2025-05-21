@@ -7,3 +7,5 @@ export { default as DotsIcon } from './DotsIcon';
 export { default as MicrophoneIcon } from './MicrophoneIcon';
 export { default as UpArrowIcon } from './UpArrowIcon';
 export { default as SoundWaveIcon } from './SoundWaveIcon';
+export { default as SidebarIcon } from './SidebarIcon';
+export { default as ShareIcon } from './ShareIcon';
