@@ -18,9 +18,7 @@ export default function App() {
   return (
     <>
       <Header />
-
       <h4>What can I help you with?</h4>
-
       <div className="search-container">
         <div className="search-top">
           <input
@@ -31,36 +29,17 @@ export default function App() {
           />
         </div>
         <div className="pill-group">
-          <div className="icon plus-btn">
-            <Icons.PlusIcon />
-          </div>
-          <div className="icon">
-            <Icons.EyeIcon />
-          </div>
-          <div className="icon">
-            <Icons.LightBulbIcon />
-          </div>
-          <div className="icon">
-            <Icons.TelescopeIcon />
-          </div>
-          <div className="icon">
-            <Icons.ArtIcon />
-          </div>
-          <div className="icon">
-            <Icons.DotsIcon />
-          </div>
+          <Icons.PlusIcon />
+          <Icons.EyeIcon />
+          <Icons.LightBulbIcon />
+          <Icons.TelescopeIcon />
+          <Icons.ArtIcon />
           <div className="icon-row">
-            <div className="icon">
-              <Icons.MicrophoneIcon />
-            </div>
-
-            <div className="icon black">
-              {isEmpty ? <Icons.SoundWaveIcon /> : <Icons.UpArrowIcon />}
-            </div>
+            <Icons.MicrophoneIcon />
+            {isEmpty ? <Icons.SoundWaveIcon /> : <Icons.UpArrowIcon />}
           </div>
         </div>
       </div>
-
       <Footer />
     </>
   );
